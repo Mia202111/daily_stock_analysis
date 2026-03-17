@@ -9,28 +9,32 @@ model_list:
       api_key: os.environ/GEMINI_API_KEY
 
   # =================
-  # 2️⃣ AIHubMix 免费
+  # 2️⃣ Gemini 备用
+  # =================
+  - model_name: gemini/gemini-2.5-flash
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  # =================
+  # 3️⃣ AIHubMix 免费
   # =================
   - model_name: openai/gpt-4o-mini
     litellm_params:
       model: openai/gpt-4o-mini
       api_key: os.environ/AIHUBMIX_KEY
-      api_base: https://aihubmix.com/v1
+      api_base: https://api.aihubmix.com/v1
 
+  # =================
+  # 4️⃣ Claude（走AIHubMix）
+  # =================
   - model_name: openai/claude-3-5-sonnet-20241022
     litellm_params:
       model: openai/claude-3-5-sonnet-20241022
       api_key: os.environ/AIHUBMIX_KEY
-      api_base: https://aihubmix.com/v1
+      api_base: https://api.aihubmix.com/v1
 
-  # =================
-  # 3️⃣ Claude备用
-  # =================
-  - model_name: openai/claude-3-5-sonnet-20241022
-    litellm_params:
-      model: openai/claude-3-5-sonnet-20241022
-      api_key: "os.environ/AIHUBMIX_KEY"
-      api_base: https://aihubmix.com/v1
+
 
 router_settings:
 
