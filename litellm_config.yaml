@@ -6,7 +6,7 @@ model_list:
   - model_name: gemini/gemini-3-flash-preview
     litellm_params:
       model: gemini/gemini-3-flash-preview
-      api_key: ${GEMINI_API_KEY}
+      api_key: os.environ/GEMINI_API_KEY
 
   # =================
   # 2️⃣ AIHubMix 免费
@@ -14,7 +14,7 @@ model_list:
   - model_name: openai/gpt-4o-mini
     litellm_params:
       model: openai/gpt-4o-mini
-      api_key: ${AIHUBMIX_KEY}
+      api_key: os.environ/AIHUBMIX_KEY
       api_base: https://api.aihubmix.com/v1
 
   # =================
