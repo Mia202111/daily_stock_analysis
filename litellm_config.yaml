@@ -15,7 +15,13 @@ model_list:
     litellm_params:
       model: openai/gpt-4o-mini
       api_key: os.environ/AIHUBMIX_KEY
-      api_base: https://api.aihubmix.com/v1
+      api_base: https://aihubmix.com/v1
+
+  - model_name: openai/claude-3-5-sonnet-20241022
+    litellm_params:
+      model: openai/claude-3-5-sonnet-20241022
+      api_key: os.environ/AIHUBMIX_KEY
+      api_base: https://aihubmix.com/v1
 
   # =================
   # 3️⃣ Claude备用
