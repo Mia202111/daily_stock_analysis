@@ -15,7 +15,7 @@ model_list:
     litellm_params:
       model: openai/gpt-4o-mini
       api_key: ${AIHUBMIX_KEY}
-      api_base: https://aihubmix.com/v1
+      api_base: https://api.aihubmix.com/v1
 
   # =================
   # 3️⃣ Claude备用
